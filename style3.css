@@ -1,0 +1,56 @@
+/* Reset básico de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #b49090;
+}
+
+/* Estilizando o cabeçalho */
+header {
+
+}
+
+/* Estilo para cada linha */
+.linha {
+    background-color: #d0e2d8; /* Cor de marca-texto (amarelo) */
+    margin: 10px 0;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+/* Estilizando os links dentro de cada linha */
+.linha a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block; /* Para ocupar toda a largura */
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.linha a:hover {
+    background-color: #9e9999;
+    color: white;
+}
+
+/* Responsividade - ajuste para telas menores */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .linha {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
