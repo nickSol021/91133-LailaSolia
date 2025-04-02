@@ -1,0 +1,101 @@
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 0;
+    background-color: #e0dede;
+}
+
+he/* Define a imagem como fundo da seção de cabeçalho */
+header {
+    position: relative;
+    width: 100%;
+    height: 30px; /* Ajuste a altura conforme necessário */
+    background-position: center; /* Centraliza a imagem */
+}
+
+/* Estiliza a faixa amarela sobre a imagem */
+.header-bar {
+    position: absolute;
+    top: 0; /* Fixa no topo */
+    left: 0;
+    width: 100%;
+    background-color: rgba(226, 212, 18, 0.8); /* Amarelo com transparência */
+    padding: 30px 0; /* Ajusta a altura da faixa */
+    text-align: center;
+}
+
+/* Estiliza o título dentro da faixa */
+.header-bar h1 {
+    color: rgb(243, 236, 236); /* Branco */
+    font-size: 50px;
+    margin: 50; /* Remova margens extras que podem afetar a posição */
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 13px;
+    background-color: #b1aca6;
+    padding: 5px 10px; /* Ajuste os valores conforme necessário */
+
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #e08115;
+    color: rgb(228, 193, 193);
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+h2{
+    color:rgb(236, 141, 16);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.header-image {
+    position: relative; /* Define o container como relativo */
+    text-align: center;
+}
+
+.header-image img {
+    width: 1900px;
+    height: 600px; /* Mantém a proporção */
+    display: block;
+    position: left;
+}
+
+.header-image h1 {
+    position: absolute; /* Posiciona o título sobre a imagem */
+    top: 5%;           /* Centraliza verticalmente */
+    left: 50%;          /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);       /* Ajuste a cor conforme necessário */
+    /* background-color: rgba(0, 0, 0, 0.5); */ /* Fundo semitransparente para melhor contraste */
+}
