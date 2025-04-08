@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial- scale=1.0"
+    <title> Painel</title>
+
+</head>
+<body
+    <h1>Bem vindo(a) ao Painel! </h1>
+    <p id= "userWelcome"> Carregando... </p>
+
+
+<!-- botao para sair-->
+<button id = "logoutBtn">Sair</button>
+
+<script>
+
+// se o nome do usuario estiver armazenado, exibe uma mensagem
+
+if(usernmame){
+    document.getElementById("userWelcome").
+textContent = "Bem vindo, $(username)!";
+
+}else{
+    document.getElementById("userWelcome").
+    textContent="Nome do usuario nao encontrado."
+}
+
+
+
+// funcao para sair (destruir a sessao e voltar para o login)
+document.getElementById("logutBtn").addEventListener("click", 
+fuction(){
+
+    //remove o nome de usuario do localStorage
+localStorage.remove.removeItem("username");
+
+//redireciona o usario de volta para a pagina de login 
+    window.location.href = "index.html"; //altera para o caminho 
+});
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+document.getElementById("loginForm").addEventListener("submit")
+fuction(event){
+
+
+const username = document.getElementById("username").value;
+const password = document.getElementById("password").value;
+
+
+//validacao dos campos
+if (username || !password){
+alert ("por favor, preencha todos os campos.");
+    return;
+}
+
+
+if (password.length < 8){
+    alert ("A senha deve ter pelo menos 8 caracteres.");
+        return;
+    }
+
+
+// salva o nome do usuario no localStorage
+localStorage.setItem("username",username);
+
+//se a validacao passar, abre o painel
+window.location.href = "painel.html"; //abre uma nova pagina 
+alert("login bem sucedido!"); // pop up de sucesso
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
