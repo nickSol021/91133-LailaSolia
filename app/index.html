@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Estoque 1.0 - SENAI FFSA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+
+    <h1>Controle de Estoque 1.0 - SENAI FSA</h1>
+
+    <form method="POST" action="api/login.php" onsubmit="return validarLogin()">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario">
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <input type="submit" value="Entrar">
+    </form>
+
+</body>
+</html>
